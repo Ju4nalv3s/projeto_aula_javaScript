@@ -1,14 +1,228 @@
 <meta charset="UTF-8">
-<h1> meu primeiro programa </h1>
+<h2> meu primeiro programa </h2>
 
- Descubra visitando o Alura <a href="http://www.alura.com.br"> aqui </a>! <br><br> <br>
-
- <script> 
+ Descubra visitando o Alura <a href="http://www.alura.com.br"> aqui </a>! <br><br>
 
 
-var ano ;
- document.write("nota: " + Math.round(22,22 + 55,22));
- 
- alert("Isso sim é um programa!");
 
- </script>
+<input/><br>
+
+<button>Ir para  aula </button> 
+
+<Script>
+
+
+var input = document.querySelector("input");
+var button = document.querySelector("button");
+input.value= ""
+input.focus();
+button.onclick = mostraAula;
+
+function mostra (frase){
+ document.writeln(frase);
+ pulaLinha();
+}
+
+ function pulaLinha (){
+   document.write("<br>");
+}
+
+var aula = [ aula0, aula1, aula2, aula3];
+
+function mostraAula(){
+  var posicao = 0;
+
+    while(true ){
+
+      if (posicao == input.value){
+        
+        aula[posicao]();
+
+      break;
+      }
+    posicao ++;
+    }
+  
+}
+
+input.value= "";
+input.focus();
+
+//////////////////////////////////////////////////////////
+
+function aula0(){
+
+mostra ("<h4>Atividade 1:</h4>");
+mostra("<hr> <br>");
+
+var  ano = 2023;
+
+mostra(  "Juan tem: " +  ( ano - 1999) + " anos" );
+
+alert("Isso sim é um programa!");
+pulaLinha();
+
+function mm(){
+  pulaLinha();
+mostra("Resumo da aula , javaScript usado:")
+pulaLinha();
+mostra(aula0);
+}
+
+mm();
+
+}
+//////////////////////////////////////////////////////////
+
+function aula1(){
+
+mostra ("<h4>Atividade 2:</h4>");
+mostra("<hr> <br>");
+
+function mostra (frase){
+ document.writeln(frase);
+ pulaLinha();
+}
+
+ function pulaLinha (){
+   document.write("<br>");
+}
+
+function calculoImc(peso, altura){
+ var imc = peso * (altura / altura);
+ mostra(imc);
+}
+
+calculoImc(10, 4);
+
+function mm(){
+  pulaLinha();
+mostra("Resumo da aula , javaScript usado:")
+pulaLinha();
+mostra(aula1);
+
+}
+
+mm();
+
+
+}
+//////////////////////////////////////////////////////////
+
+
+function aula2(){
+
+mostra ("<h4>Atividade 3:</h4>");
+mostra("<hr> <br>");
+
+
+
+function  resposta(){
+ var nome = prompt("qual seu nome? ");
+ var idade = prompt("Qual sua idade?");
+
+ return mostra("Seja bem vindo " + nome);
+}
+
+
+resposta();
+
+function mm(){
+  pulaLinha();
+mostra("Resumo da aula , javaScript usado:")
+pulaLinha();
+mostra(aula2);
+
+}
+
+mm();
+
+}
+//////////////////////////////////////////////////////////
+
+function aula3(){
+
+mostra ("<h4>Atividade 4:</h4>");
+mostra("<hr> <br>");
+
+
+
+function mostra (frase){
+ document.writeln(frase);
+ pulaLinha();
+}
+
+ function pulaLinha (){
+   document.write("<br>");
+}
+
+var numeroAleatorio = Math.round(Math.random() * 10);
+var numero;
+
+function resposta(){
+numero = parseInt(prompt("Tente adivinha o número, digite o número: "));
+}
+
+
+resposta();
+
+if (numeroAleatorio == numero ){
+mostra("parabens você acertou, " + "o número era " + numeroAleatorio);
+}
+if (numeroAleatorio != numero ){
+   mostra("Tente novamente, " + "o número era " + numeroAleatorio);
+ mostra("Você digitou " + numero);
+ pulaLinha();
+}
+
+function mm(){
+pulaLinha();
+  mostra("Resumo da aula , javaScript usado:")
+  pulaLinha();
+  mostra(aula3);
+
+}
+
+mm();
+}
+
+//////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mm(){
+pulaLinha();
+mostra("Resumo da aula , javaScript usado:")
+pulaLinha();
+mostra(aula4);
+
+
+}
+
+//mm();
+
+</script>
+
+
+
+
+
